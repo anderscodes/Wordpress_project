@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="post-item">
       <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <div class="metabox">
-        <p>Posted by Anders on 26082018 in News</p>
+        <p>Posted by <?php the_author_posts_link()?> on 26082018 in News</p>
       </div>
       <div class="generic-content">
         <?php the_excerpt(); ?>
