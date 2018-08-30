@@ -10,7 +10,7 @@ get_header(); ?>
        single_cat_title();
     }
     if (is_author()) {
-      echo "author name will go here";
+      echo "Posts by "; the_author();
     } ?></h1>
     <div class="page-banner__intro">
       <p> Keep up with our latest news</p>
