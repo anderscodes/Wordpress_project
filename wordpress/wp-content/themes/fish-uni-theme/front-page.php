@@ -56,7 +56,7 @@
                <span class="event-summary__day">20</span>
              </a>
              <div class="event-summary__content">
-               <h5 class="event-summary__title headline headline--tiny"><a href="#" <?php the_title(); ?></a></h5>
+               <h5 class="event-summary__title headline headline--tiny"><a href="<?php echo the_permalink(); ?>" <?php the_title(); ?></a></h5>
                <p> <?php the_title(); ?> <a href="#" class="nu gray">Read more</a></p>
              </div>
            </div>
