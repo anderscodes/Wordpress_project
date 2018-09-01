@@ -14,3 +14,15 @@ function uni_features() {
 }
 
 add_action('after_setup_theme', 'uni_features');
+
+function uni_post_types() {
+  register_post_type('event', array(
+    'public' => true,
+    'labels' => array(
+      'name' => 'Events'
+    ),
+    'menu_icon' => 'dashicons-tickets-alt'
+  ));
+};
+
+add_action('init', 'uni_post_types');
